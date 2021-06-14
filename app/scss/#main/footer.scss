@@ -1,0 +1,15 @@
+.footer {
+    padding: 5px 30px;
+    position: relative;
+    z-index: 101;
+    background: #636363;
+    color: #fff;
+    &__copy {
+        font-size: 14px;
+        line-height: 27px;
+        &-symbol {
+            position: relative;
+            top: 2px;
+        }
+    }
+}

@@ -1,0 +1,108 @@
+.clients {
+    padding: 85px 0;
+    position: relative;
+    z-index: 5;
+    background: #f5f5f5;
+    &__descr {
+        margin-bottom: 70px;
+        margin-top: 25px;
+        max-width: 425px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    &__brand {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        li {
+            margin-right: 15px;
+            margin-bottom: 15px;
+        }
+        a {
+            display: block;
+            width: 100%;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    &__box {
+        &-title {
+            margin-bottom: 25px;
+            font-size: 20px;
+            line-height: 32px;
+        }
+    }
+    &__event {
+        a {
+            display: block;
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+        }
+        &-title {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 24px;
+            color: #1BA590;
+        }
+        &-pr {
+            margin-bottom: 40px;
+        }
+        &-list {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            text-align: center;
+            li {
+                margin-right: 15px;
+                margin-bottom: 15px;
+            }
+        }
+        &-time {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    .clients {
+        padding: 50px 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .clients {
+        padding: 30px 0;
+        &__descr {
+            margin: 20px 0 40px;
+        }
+        &__brand {
+            li {
+                margin-right: 20px;
+                margin-bottom: 20px;
+                width: calc(50% - 10px);
+                &:nth-child(2n) {
+                    margin-right: 0;
+                }
+            }
+        }
+        &__event {
+            li {
+                width: calc(50% - 20px);
+                margin-right: 20px;
+                margin-bottom: 20px;
+                &:nth-child(2n) {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

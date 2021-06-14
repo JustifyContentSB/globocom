@@ -1,0 +1,111 @@
+.team {
+    background: $secBg;
+    .info-title {
+        margin: 0 80px 40px;
+    }
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    &__img {
+        width: 540px;
+        min-width: 540px;
+        margin-right: 50px;
+    }
+    &__info {
+        width: calc(100% - 590px);
+        padding-right: 10px;
+        padding-top: 12px;
+        max-width: 454px;
+        font-weight: 300;
+        &-text {
+            margin-bottom: 24px;
+            p {
+                margin-bottom: 24px;
+                line-height: 24px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    &__about {
+        &-title {
+            margin-bottom: 25px;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 32px;
+        }
+        &-list {
+            li {
+                padding: 10px 0;
+                margin-bottom: 25px;
+                padding-left: 75px;
+                position: relative;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                img {
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    .team {
+        &__inner {
+            flex-direction: column;
+        }
+        &__img {
+            width: 100%;
+            min-width: 100%;
+            margin-right: 0;
+            img {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+        &__info {
+            padding: 50px;
+            width: 100%;
+            max-width: 100%;
+        }
+        .info-title {
+            margin: 0 50px 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .team {
+        &__info {
+            padding: 20px;
+        }
+        .info-title {
+            margin: 20px;
+            margin-top: 0;
+        }
+        &__about {
+            &-list {
+                font-size: 14px;
+                li {
+                    margin-bottom: 10px;
+                    padding-left: 50px;
+                }
+            }
+            &-icon {
+                width: 25px;
+                height: auto;
+            }
+            &-title {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}

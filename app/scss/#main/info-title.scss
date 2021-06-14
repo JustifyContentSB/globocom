@@ -1,0 +1,17 @@
+.info-title {
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 120%;
+}
+
+@media screen and (max-width: 1279px) {
+    .info-title {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .info-title {
+        font-size: 24px;
+    }
+}
